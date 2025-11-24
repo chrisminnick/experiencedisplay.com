@@ -14,12 +14,11 @@
       body {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
           Oxygen, Ubuntu, Cantarell, sans-serif;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         min-height: 100vh;
         display: flex;
         align-items: center;
         justify-content: center;
-        color: #ffffff;
+        color: #000000;
         padding: 20px;
       }
 
@@ -31,7 +30,6 @@
 
       .logo-container {
         margin-bottom: 40px;
-        animation: fadeInDown 1s ease-out;
         display: flex;
         justify-content: center;
       }
@@ -53,7 +51,6 @@
         left: 0;
         right: 0;
         height: 8px;
-        background: linear-gradient(90deg, #667eea, #764ba2, #f093fb);
       }
 
       .logo-box img {
@@ -71,7 +68,6 @@
       }
 
       .content {
-        animation: fadeInUp 1s ease-out 0.3s backwards;
         width: 100%;
       }
 
@@ -93,14 +89,13 @@
         font-size: 1.2rem;
         line-height: 1.8;
         margin-bottom: 20px;
-        color: rgba(255, 255, 255, 0.9);
+        color: rgba(0, 0, 0, 0.8);
         text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
       }
 
       .cta-button {
         display: inline-block;
         background: white;
-        color: #667eea;
         padding: 16px 48px;
         border-radius: 50px;
         text-decoration: none;
@@ -114,28 +109,6 @@
         transform: translateY(-2px);
         box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
         background: #f8f9fa;
-      }
-
-      @keyframes fadeInDown {
-        from {
-          opacity: 0;
-          transform: translateY(-30px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      @keyframes fadeInUp {
-        from {
-          opacity: 0;
-          transform: translateY(30px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
       }
 
       @media (max-width: 768px) {
